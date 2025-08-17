@@ -277,10 +277,10 @@ p {
     font-size: 1.6rem;
   }
   .h4_size {
-    font-size: 1.35rem;
+    font-size: 1.3rem;
   }
   .h5_size {
-    font-size: 1.05rem;
+    font-size: 1.0rem;
   }
   .h6_size {
     font-size: 0.75rem;
@@ -11959,7 +11959,7 @@ header.masthead h1, header.masthead .h1 {
     margin:0 0 .25rem 0;
     font-weight:600;
     color: var(--we-primary);
-    font-size:1.15rem;
+    font-size:1.0rem;
   }
   .tl-card h4{
     margin:.75rem 0 .75rem 0;
@@ -12021,7 +12021,7 @@ header.masthead h1, header.masthead .h1 {
     margin:0 0 .25rem 0;
     font-weight:600;
     color: var(--we-primary);
-    font-size:1.15rem;
+    font-size:1.0rem;
   }
   .tl-card h4{
     margin:.75rem 0 .75rem 0;
