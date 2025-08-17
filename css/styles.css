@@ -11777,7 +11777,7 @@ header.masthead h1, header.masthead .h1 {
   position:absolute;
   top:10px;
   bottom:0;
-  left: calc(var(--we-date-col) + (var(--we-marker-col)/2) + 19px);
+  left: calc(var(--we-date-col) + (var(--we-marker-col)/2) + 7px);
   width:5px;
   background: var(--we-line);
   z-index:0;
@@ -11918,6 +11918,40 @@ header.masthead h1, header.masthead .h1 {
   :root{
     --we-date-col: 90px;
   }
+  .tl {
+    grid-template-columns: var(--we-marker-col) 1fr; /* 左 dot + 右 (date + card) */
+  }
+  .tl::before{
+    top:10px;
+    bottom:0;
+    left: calc((var(--we-marker-col)/2) - 3px);
+    width:5px;
+    background: var(--we-line);
+    z-index:0;
+  }
+
+  .tl-date {
+    grid-column: 2;
+    grid-row: span 2;
+    text-align: left;
+  }
+
+  .tl-card {
+    grid-column: 2;
+    margin-top: -20px;
+  }
+
+  .tl-card:hover{
+    grid-column: 2;
+  }
+
+  .tl-marker {
+    grid-column: 1;
+    grid-row: span 2;
+    justify-content: center;
+    margin-top: -45px;
+  }
+  
   .tl-date h6{
     font-size:0.8rem;
   }
