@@ -11670,6 +11670,9 @@ header.masthead h1, header.masthead .h1 {
   .btn h6{
     margin-top: -5px;
   }
+  .submit-item {
+    height: auto;
+  }
 
   .learn_more_outside{
     width: 70px;
