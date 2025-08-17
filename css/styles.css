@@ -299,19 +299,19 @@ p {
     padding-bottom: 0.3125rem;
   }
   .h2_size {
-    font-size: 1.8rem;
-  }
-  .h3_size {
     font-size: 1.6rem;
   }
-  .h4_size {
+  .h3_size {
     font-size: 1.4rem;
   }
+  .h4_size {
+    font-size: 1.2rem;
+  }
   .h5_size {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .h6_size {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
   .btn_size {
     padding-top: 6px;
@@ -11645,6 +11645,45 @@ header.masthead h1, header.masthead .h1 {
     -webkit-transition: .5s;
 }
 
+/* xl */
+@media (min-width: 1200px) {
+}
+
+/* lg */
+@media (min-width: 992px) and (max-width: 1200px) {
+}
+
+/* md */
+@media (min-width: 768px) and (max-width: 992px) {
+}
+
+/* sm */
+@media (min-width: 576px) and (max-width: 768px) {
+}
+
+/* xs */
+@media (max-width: 576px) {
+  .btn {
+    width: 59px;
+    height: 31px;
+  }
+  .btn h6{
+    margin-top: -5px;
+  }
+
+  .learn_more_outside{
+    width: 70px;
+    height: 35px;
+  }
+
+  .learn_more{
+      width: 66px;
+      height: 31px;
+      padding-left: 16px;
+      padding-top: 2px;
+  }
+}
+
 .learn_more h6{
     /*#036AFF, #381de9, #861de9*/
     width: fit-content;
@@ -11716,7 +11755,7 @@ header.masthead h1, header.masthead .h1 {
   --we-line:#2c5282;
   --we-muted:#74808a;
   --we-card:#ffffff;
-  --we-gap:22px;
+  --we-gap:10px;
   --we-date-col: 150px;
   --we-marker-col:60px;
 }
@@ -11907,6 +11946,40 @@ header.masthead h1, header.masthead .h1 {
   :root{
     --we-date-col: 90px;
   }
+  .tl {
+    grid-template-columns: var(--we-marker-col) 1fr; /* 左 dot + 右 (date + card) */
+  }
+  .tl::before{
+    top:10px;
+    bottom:0;
+    left: calc((var(--we-marker-col)/2) - 3px);
+    width:5px;
+    background: var(--we-line);
+    z-index:0;
+  }
+
+  .tl-date {
+    grid-column: 2;
+    grid-row: span 2;
+    text-align: left;
+  }
+
+  .tl-card {
+    grid-column: 2;
+    margin-top: -20px;
+  }
+
+  .tl-card:hover{
+    grid-column: 2;
+  }
+
+  .tl-marker {
+    grid-column: 1;
+    grid-row: span 2;
+    justify-content: center;
+    margin-top: -45px;
+  }
+
   .tl-date h6{
     font-size:0.8rem;
   }
@@ -11927,6 +12000,10 @@ header.masthead h1, header.masthead .h1 {
     font-size:0.65rem;
     line-height:1.8;
     margin:0;
+  }
+
+  .skill {
+    font-size: 0.73rem;
   }
 }
 
