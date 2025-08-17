@@ -11959,13 +11959,13 @@ header.masthead h1, header.masthead .h1 {
     margin:0 0 .25rem 0;
     font-weight:600;
     color: var(--we-primary);
-    font-size:1.0rem;
+    font-size:0.9rem;
   }
   .tl-card h4{
     margin:.75rem 0 .75rem 0;
     color:#7e8890;
     font-weight:500;
-    font-size:0.75rem;
+    font-size:0.7rem;
   }
   .tl-card p, .tl-card li{
     color:#74808a;
@@ -12021,13 +12021,13 @@ header.masthead h1, header.masthead .h1 {
     margin:0 0 .25rem 0;
     font-weight:600;
     color: var(--we-primary);
-    font-size:1.0rem;
+    font-size:0.9rem;
   }
   .tl-card h4{
     margin:.75rem 0 .75rem 0;
     color:#7e8890;
     font-weight:500;
-    font-size:0.75rem;
+    font-size:0.7rem;
   }
   .tl-card p, .tl-card li{
     color:#74808a;
