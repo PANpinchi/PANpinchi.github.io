@@ -283,7 +283,7 @@ p {
     font-size: 1.0rem;
   }
   .h6_size {
-    font-size: 0.75rem;
+    font-size: 0.65rem;
   }
   .btn_size {
     padding-top: 6px;
@@ -311,7 +311,7 @@ p {
     font-size: 0.8rem;
   }
   .h6_size {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
   }
   .btn_size {
     padding-top: 6px;
@@ -11663,6 +11663,16 @@ header.masthead h1, header.masthead .h1 {
 
 /* xs */
 @media (max-width: 576px) {
+  header.masthead {
+    background: 
+      linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%),
+      url("../assets/img/home2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
   .btn {
     width: 59px;
     height: 31px;
